@@ -1,12 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sample Web Page</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Web Page</title>
+</head>
+
 <body>
-    <h1>Welcome!</h1>
-    <p>This is my first web page.</p>
-    <h2>This is a sub-title</h2>
-    <p>This is another paragraph.</p>
+    <header>
+        <h1>My Sample Page</h1>
+    </header>
+    <main>
+        <section id="working-with-text">
+            <h1>Working with Text</h1>
+            <p>Welcome to the sample page. In this section, we'll explore working with text.</p>
+
+            <h2>Headings</h2>
+            <p>Headings in HTML are created using the &lt;h1&gt; to &lt;h6&gt; tags.</pre>
+            </p>
+
+            <h2>Paragraphs</h2>
+            <p>The &lt;p&gt; tag is used to create paragraphs.</p>
+
+            <h2>Unordered Lists</h2>
+            <p>Unordered lists are created using the &lt;ul&gt; tag.</p>
+            <ul>
+                <li>This is a list item.</li>
+                <li>This is another list item.</li>
+                <li>
+                    This item has a subitems.
+                    <ul>
+                        <li>Sub-item 1.</li>
+                        <li>Sub-item 2.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Ordered Lists</h2>
+            <p>Ordered lists are creating using the &lt;ol&gt; tag.</p>
+            <ol>
+                <li>Item 1.</li>
+                <li>Item 2.</li>
+                <li>Item 3</li>
+                <ol type="i">
+                    <li>Item 3.1</li>
+                    <li>Item 3.2</li>
+                </ol>
+                <li>Item 4.</li>
+            </ol>
+
+            <h2>Text Formatting</h2>
+
+            <h3>Basic Formatting</h3>
+            <p>Most of the time, we simply use <strong>bold</strong> and <em>italicised</em> text in plain
+                HTML, and leave other formatting to CSS. <del>Editor's note: maybe define HTML here?</del></p>
+
+            <h3>Semantic Formatting</h3>
+            <p>Semantic tags allow a computer to better understand the content of a document, whilst also
+                possibly providing some visual clues to a human reader.</p>
+            <p>
+                In <abbr title="Hypertext Markup Language">HTML</abbr>, we can <mark>mark certain text as
+                    important</mark>.
+
+                We can also represent times like <time datetime="2025-01-01">New Year's Day</time>.
+                <ins>Editor's note: add more examples here.</ins>
+            </p>
+            <p>
+                We can also represent mathematical concepts like subscripts: T<sub>1</sub>, superscripts: 10<sup>2</sup>
+                and even
+                Mathematical variables like <var>X</var>.
+            </p>
+            <p>
+                Remember, as written by Brian Kernighan in his book <cite>The C Programming Language</cite>,
+                <q>The only way to learn a new programming language is by writing programs in it</q>.
+            </p>
+            <p>
+                Also, remember you can use <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd> on most browsers to
+                view the HTML code of this page. This will start as follows:
+                <samp>&lt;!doctype html&gt;...</samp>
+            </p>
+
+
+            <h3>Skipping Lines</h3>
+            <p>We can use paragraphs to skip lines.</p>
+            <p>However, we can also skip lines wherever we want <br> like here, by inserting a break.</p>
+            <p>We can also indent lines using an HTML special character <br> &nbsp;&nbsp;&nbsp;&nbsp;Like this.</p>
+        </section>
+
+        <section id="working-with-tables">
+            <h1>Front-End Web Technologies</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tech</th>
+                        <th>Used for</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Page content</td>
+                        <td>1991</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Page functionality & interaction</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Styling web content</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <td>XML</td>
+                        <td>Used for structured data</td>
+                        <td>1998</td>
+                    </tr>
+                    <tr>
+                        <td>JSON</td>
+                        <td>Lightweight data format popular in APIs</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>SVG</td>
+                        <td>XML-based vector image format</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>AJAX</td>
+                        <td>Loading content in the background with JavaScript</td>
+                        <td>2005</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td>Years of innovation:</td>
+                        <td>14</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="dividing-content">
+            <h1>Dividing Content</h1>
+            <div id="div1" style="background-color: darkorange;">This is a div.</div>
+            <div id="div2" style="background-color: lightblue">This is another div.</div>
+            <div id="div3" style="background-color: beige;">
+                <p>
+                    This text is inside a paragraph, which is a block-level element. However,
+                    <span id="span1" style="background-color: lightgreen;">this part of the
+                        text is inside a span inline element
+                    </span>.
+                </p>
+            </div>
+        </section>
+
+        <section id="media">
+            <h1>Images</h1>
+            <img src="assets/pic1.jpg" style="fill: orange">
+            <h2>Vector Image</h2>
+            <img src="assets/fiery-svgrepo-com.svg" width="256" height="256">
+            <h2>Inline Vector Image</h2>
+            <svg class="icon" width="256" height="256" fill="orange">
+                <use href="assets/icons.svg#icon-clock"></use>
+            </svg>
+
+            <h1>Videos</h1>
+            <p>A local video with the &lt;video&gt; tag:</p>
+            <video controls>
+                <source src="assets/BigBuckBunny_320x180.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>A video from YouTube</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ix7TUGVYIo?si=lZiOtMsumYoGWJab"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>Audio</p>
+            <audio controls>
+                <source src="assets/The Princess - Evening Telecast.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="forms">
+            <h1>Forms</h1>
+            <form name="sample-form" method="post" action="/api/contact">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" required><br>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+999 99999999999"><br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob"><br>
+                <label for="pic">Profile picture</label>
+                <input type="file" id="pic"><br><br>
+
+                <p>Please choose your platform</p>
+                <label>
+                    <input type="radio" name="system" value="Android" checked>
+                    Android
+                </label>
+                <label>
+                    <input type="radio" name="system" value="ios">
+                    iOS
+                </label>
+                <label>
+                    <input type="radio" name="system" value="linux">
+                    Linux
+                </label>
+
+                <p>How would you like us to get in touch?</p>
+                <label>
+                    <input type="checkbox" name="contact_method" value="mail">
+                    Mail
+                </label>
+                <label>
+                    <input type="checkbox" name="contact_method" value="email" checked>
+                    Email
+                </label>
+                <label>
+                    <input type="checkbox" name="contact_method" value="Phone">
+                    Phone
+                </label><br><br>
+
+                <label for="paper_size">Print Size</label>
+                <select id="paper_size">
+                    <option selected value="913">9x13 (89x127mm)</option>
+                    <option value="1015">10x15 (102x152mm)</option>
+                    <option value="1318">13x18 (127x178mm)</option>
+                    <option value="1520">15x20 (152x203mm)</option>
+                    <option value="2030">20x30 (203x305mm)</option>
+                    <option value="3045">30x45 (305x457mm)</option>
+                </select><br><br>
+                
+                <label for="notes">Notes</label>
+                <textarea id="notes" rows="8" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Sign Up"><br><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; Copyright Joe Doe
+    </footer>
 </body>
+
 </html>

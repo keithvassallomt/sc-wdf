@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio website of John Doe, lead developer and designer.">
+    <title>John Doe</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" id="logo-link">
+                <h1>
+                    John Doe
+                </h1>
+            </a>
+            <nav>
+                <div id="menu-items">
+                    <a href="#bio">About</a>
+                    <a href="#contact">Get in Touch</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="cv.html">CV</a>
+                </div>
+            </nav>
+            <button id="nav-menu" aria-label="Open menu">
+                <svg>
+                    <use href="assets/vector/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <button id="theme-toggle" aria-label="Switch to colour theme">
+                <svg>
+                    <use href="assets/vector/icons.svg#icon-moon"></use>
+                </svg>
+            </button>
+        </header>
+
+        <main>
+            <section id="hero" class="top-section">
+                <div id="hello-splash">HELLO</div>
+                <div class="developer-wrapper">
+                    <img id="developer-side" src="assets/images/landing/developer_side.png"
+                        alt="John Doe, side view, wearing headphones">
+                </div>
+                <div id="geek-badge">
+                    <svg width="122" height="124">
+                        <use href="assets/vector/icons.svg#geek-badge"></use>
+                    </svg>
+                </div>
+                <button id="read-more" aria-label="Read more about me">
+                    <svg width="26" height="40">
+                        <use href="assets/vector/icons.svg#icon-arrow-down"></use>
+                    </svg>
+                </button>
+            </section>
+
+            <section id="tagline">
+                <p id="line-1">I'm a <span id="lead-badge">Lead</span> Developer. Let's craft</p>
+                <p id="line-2">something stunning together.</p>
+            </section>
+
+            <section id="bio">
+                <div id="bio-container">
+                    <div class="bio-image"></div>
+                    <div id="bio-content">
+                        <div id="bio-text">
+                            <p>
+                                My skills include teaching coding &amp; technical subjects,
+                                development in various languages, content creation &amp;
+                                presentation, and the occasional gag.
+                            </p>
+                        </div>
+                        <div id="bio-skills">
+                            <div id="skill-webflow" class="skill-badge">
+                                <svg>
+                                    <use href="assets/vector/icons.svg#icon-webflow"></use>
+                                </svg>
+                            </div>
+                            <div id="skill-html" class="skill-badge">
+                                <svg>
+                                    <use href="assets/vector/icons.svg#icon-html"></use>
+                                </svg>
+                            </div>
+                            <div id="skill-css" class="skill-badge">
+                                <svg>
+                                    <use href="assets/vector/icons.svg#icon-css"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="my-services">
+                <div id="my-services-heading">
+                    <span id="my-services-arrow">
+                        <svg width="26" height="40">
+                            <use href="assets/vector/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                    </span>
+                    <p>My Services</p>
+                </div>
+                <div id="services-container">
+                    <div class="service">
+                        <p class="service-number">01</p>
+                        <h3>WEB DESIGN</h3>
+                        <p>
+                            Visually stunning web designs that captivate your audience by blending
+                            your brand voice and customer needs.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <p class="service-number">02</p>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                            Get custom web development solutions that are tailored to your
+                            specifications, designed to deliver a flawless user experience.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <p class="service-number">03</p>
+                        <h3>CONTENT &amp; SEO</h3>
+                        <p>
+                            Proven SEO strategies that enhance your online performance,
+                            bringing you to the forefront of organic search results.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div id="contact-container">
+                    <div id="contact-header">
+                        <h2>LET'S COLLABORATE</h2>
+                        <button id="send-email" aria-label="Send me an email">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-email"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="contact-body">
+                        <div class="contact-image"></div>
+                        <div id="form-area">
+                            <form id="contact-form" action="#" method="post">
+                                <div class="form-group">
+                                    <label id="name-label" for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label id="email-label" for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label id="message-label" for="message">Message</label>
+                                    <textarea id="message" name="message" placeholder="Your message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="submit-button">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav id="social-buttons">
+                <ul>
+                    <li>
+                        <a id="social-facebook" class="social-button" href="https://facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Facebook profile">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="social-instagram" class="social-button" href="https://facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Instagram profile">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="social-linkedin" class="social-button" href="https://facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p>Copyright &copy;2025</p>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
