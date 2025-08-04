@@ -1,0 +1,11 @@
+:root {
+    --accent-colour: rebeccapurple;
+}
+
+h1, h2, h3 {
+    color: var(--accent-colour);
+}
+mark {
+    color: white;
+    background-color: var(--accent-colour);
+}

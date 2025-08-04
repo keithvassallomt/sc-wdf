@@ -1,0 +1,100 @@
+/* Colour tokens */
+:root {
+    --neutral-50: #FDF7EC;
+    --neutral-100: #F5F3EF;
+    --neutral-200: #D8D2C5;
+    --neutral-300: #C3BBAC;
+    --neutral-400: #A19D94;
+    --black-80: #080808;
+    --black-90: #0F0F0F;
+    --black-100: #000000;
+    --white-100: #FFFFFF;
+    --grey-400: #5C5C5C;
+    --grey-500: #2B2B2B;
+    --orange-400: #FF5501;
+    --bluegrey-400: #5E7A7D;
+    --bluegrey-100: #B7C9CA;
+    --black-100-a25: #00000040;
+    --white-100-a25: #FFFFFF40;     
+}
+
+/* Light theme colours */
+:root {
+    /* Background */
+    --background-primary: var(--neutral-100);
+    --background-secondary: var(--neutral-200);
+    --background-tertiary: var(--neutral-300);
+    /* Text */
+    --text-primary: var(--black-100);
+    --text-secondary: var(--white-100);
+    --text-tertiary: var(--grey-400);
+    /* Stroke */
+    --stroke-primary: var(--grey-400);
+    --stroke-secondary: var(--neutral-400);
+    /* Buttons */
+    --button-background-primary: var(--black-100);
+    --button-background-secondary: var(--grey-500);
+    --button-background-tertiary: var(--neutral-200);
+    --button-stroke-primary: var(--black-100);
+    --button-stroke-secondary: var(--grey-400);
+    --button-stroke-tertiary: var(--neutral-50);
+    /* Icons */
+    --icon-primary: var(--neutral-50);
+    --icon-secondary: var(--black-100);
+    /* Accents */
+    --accent-primary: var(--orange-400);
+    --accent-secondary: var(--bluegrey-400);
+    --accent-secondary-light: var(--bluegrey-100);
+    /* Form */
+    --field-background-primary: var(--white-100);
+    /* Blog */
+    --blog-background-primary: var(--white-100);
+    --blog-text-primary: var(--black-100);
+    --blog-text-secondary: var(--grey-400);
+    --blog-text-tertiary: var(--black-100);
+    --blog-title: var(--orange-400);
+    --blog-shadow: var(--black-100-a25);
+    /* CV */
+    --cv-accent: var(--bluegrey-400);
+    --cv-accent-secondary: var(--bluegrey-100);
+}
+
+:root[data-theme='dark'] {
+  /* Background */
+    --background-primary: var(--black-80);
+    --background-secondary: var(--black-90);
+    --background-tertiary: var(--black-90);
+    /* Text */
+    --text-primary: var(--neutral-50);
+    --text-secondary: var(--neutral-50);
+    --text-tertiary: var(--grey-400);
+    /* Stroke */
+    --stroke-primary: var(--grey-400);
+    --stroke-secondary: var(--grey-400);
+    /* Buttons */
+    --button-background-primary: var(--black-90);
+    --button-background-secondary: var(--grey-500);
+    --button-background-tertiary: var(--neutral-50);
+    --button-stroke-primary: var(--neutral-50);
+    --button-stroke-secondary: var(--grey-400);
+    --button-stroke-tertiary: var(--white-100);
+    /* Icons */
+    --icon-primary: var(--white-100);
+    --icon-secondary: var(--neutral-50);
+    /* Accents */
+    --accent-primary: var(--orange-400);
+    --accent-secondary: var(--bluegrey-400);
+    --accent-secondary-light: var(--bluegrey-100);
+    /* Form */
+    --field-background-primary: var(--white-100);
+    /* Blog */
+    --blog-background-primary: var(--black-90);
+    --blog-text-primary: var(--neutral-50);
+    --blog-text-secondary: var(--neutral-400);
+    --blog-text-tertiary: var(--black-100);
+    --blog-title: var(--orange-400);
+    --blog-shadow: var(--white-100-a25);
+    /* CV */
+    --cv-accent: var(--bluegrey-100);
+    --cv-accent-secondary: var(--bluegrey-400);
+}

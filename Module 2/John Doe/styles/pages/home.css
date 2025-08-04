@@ -1,0 +1,398 @@
+@import url('../main.css');
+
+/* ============================= HERO ================================== */
+#hero {
+    display: flex;
+    height: calc(100vh - 200px);
+    max-width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 32px;
+    background-color: var(--background-secondary);
+    position: relative;
+}
+#developer-side {
+    width: auto;
+    height: 110%;
+    aspect-ratio: 577/560;
+    object-fit: cover;
+    object-position: bottom left;
+    display: block;
+    z-index: 5;
+}
+#hello-splash {
+    color: var(--accent-primary);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 335px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#geek-badge {
+    display: flex;
+    width: 154px;
+    height: 154px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    right: 10%;
+    top: 250px;
+    border-radius: 77px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    z-index: 20;
+}
+#read-more {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: var(--button-background-secondary);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    display: block;
+    z-index: 20;
+}
+#read-more:hover {
+    cursor: pointer;
+    background-color: var(--button-background-primary);
+}
+#read-more svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: var(--icon-primary);
+}
+.developer-wrapper {
+    overflow: hidden; /* or visible depending on context */
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 110%;
+    aspect-ratio: 577/560;
+    object-fit: cover;
+    object-position: bottom left;
+    display: block;
+    z-index: 5;
+}
+/* ============================= HERO END ============================== */
+
+/* ============================= TAGLINE =============================== */
+#tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 60px;
+}
+#lead-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 70px;
+    border-radius: 42px;
+    background-color: var(--accent-primary);
+    font-size: 30px;
+    transform: rotate(-15deg);
+    color: var(--black-100);
+}
+/* ============================= TAGLINE END =========================== */
+
+/* ============================= BIO =================================== */
+#bio {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 32px;
+    border: 1px solid var(--stroke-secondary);
+    padding: 16px 30px 16px 30px;
+    gap: 10px;
+    max-width: 1137px;
+    margin: 53px auto 0 auto;
+}
+#bio-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.bio-image {
+    width: 411px;
+    height: 422px;
+    border-radius: 22px;
+    background-image: url('../../assets/images/landing/developer_front.png');
+    background-size: 250%; /* Zoom in on the image */
+    background-position: 50% 0; /* Focus on the face */
+    background-color: var(--accent-secondary);
+    mix-blend-mode: multiply;
+}
+#bio-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bio-text p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0 0 15px;
+    color: var(--text-primary);
+}
+#bio-skills {
+    display: flex;
+    gap: 25px;
+}
+.skill-badge {
+    width: 56px;
+    height: 56px;
+    background-color: var(--button-background-primary);
+    border-color: var(--button-stroke-secondary);
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-badge svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--icon-primary);
+}
+/* ============================= BIO END =============================== */
+
+/* ============================= MY SERVICES =========================== */
+#my-services {
+    max-width: 1137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 53px auto 0 auto;
+}
+#services-container {
+    margin-top: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    max-width: 1137px;
+    align-self: stretch;
+}
+#my-services-heading {
+    display: flex;
+    gap: 10px;
+}
+#my-services-heading p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+#my-services-arrow {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: var(--button-background-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#my-services-arrow:hover {
+    cursor: pointer;
+    background-color: var(--button-background-primary);
+}
+#my-services-arrow svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: var(--icon-primary);
+}
+.service {
+    display: flex;
+    width: 348px;
+    height: 348px;
+    padding: 40px 29px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    border-radius: 32px;
+    border: 1px solid var(--stroke-secondary);
+    background-color: var(--background-secondary);
+}
+.service h3 {
+    color: var(--text-primary);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+}
+.service p {
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.service .service-number {
+    color: var(--accent-primary);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+/* ============================= MY SERVICES END ======================= */
+
+/* ============================= CONTACT =============================== */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    width: 100%;
+    max-width: 100%;
+}
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    min-width: 360px;
+    gap: 20px;
+    flex: 1 0 0;
+}
+#contact-header {
+    display: flex;
+    min-height: 68px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+#contact-header h2 {
+    color: var(--text-primary);
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 28px;
+}
+#send-email {
+    display: flex;
+    height: 48px;
+    padding: 10px 40px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 42px;
+    background-color: var(--accent-primary);
+}
+#send-email:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+#contact-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 32px;
+    background-color: var(--background-secondary);
+}
+#send-email svg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    fill: var(--black-100);
+    width: 45px;
+    height: 33px;
+}
+.contact-image {
+    width: 630px;
+    height: 490px;
+    border-radius: 22px;
+    background-image: url('../../assets/images/landing/mobile_web.png');
+    background-size: 150%;
+    background-position: 80% 0;
+}
+#form-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: center;
+    padding-right: 30px;
+    flex: 1 0 0;
+}
+#form-area form {
+    display: flex;
+    height: 435px;
+    width: 530px;
+    min-width: 360px;
+    max-width: 530px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    border-radius: 22px;
+    border: 1px solid var(--stroke-secondary);
+    background-color: var(--background-tertiary);
+}
+#form-area form label {
+    display: none;
+}
+.form-group {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    box-sizing: border-box;
+}
+#contact-form textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--accent-primary);
+    color: var(--black-100);
+    width: 100px;
+    height: 48px;
+    padding: 0 3px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.submit-button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+/* ============================= CONTACT END =========================== */

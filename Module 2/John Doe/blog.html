@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of John Doe, lead developer and designer.">
+    <title>John Doe</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" id="logo-link">
+                <h1>
+                    John Doe
+                </h1>
+            </a>
+            <nav>
+                <div id="menu-items">
+                    <a href="index.html#bio">About</a>
+                    <a href="index.html#contact">Get in Touch</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="cv.html">CV</a>
+                </div>
+                <button id="nav-menu" aria-label="Open menu">
+                    <svg>
+                        <use href="assets/vector/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <button id="theme-toggle" aria-label="Switch colour theme">
+                    <svg>
+                        <use href="assets/vector/icons.svg#icon-moon"></use>
+                    </svg>
+                </button>
+
+            </nav>
+        </header>
+
+        <main>
+            <div id="blog-header" class="top-section">BLOG</div>
+            <article>
+                <div class="blog-header-img"></div>
+                <div class="article-content">
+                    <header>
+                        <div class="title-frame">
+                            <h1>Exploring CSS Variables</h1>
+                        </div>
+                        <h2>Stop the donkey work and make your styles smart</h2>
+                        <div class="blog-meta">
+                            <div class="blog-meta-line"></div>
+                            <div class="blog-meta-content">
+                                <span class="avatar"></span>
+                                <span class="author">John Doe</span>
+                                <span class="blog-meta-right">
+                                    <span class="reading-time">5 min read · </span>
+                                    <time datetime="2025-06-03">3rd June 2025</time>
+                                </span>
+                            </div>
+                            <div class="blog-meta-line"></div>
+                        </div>
+                    </header>
+                    <section>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis nulla eros. Cras
+                            fringilla malesuada purus, sit amet porta dui iaculis quis. Sed lobortis iaculis
+                            pellentesque.
+                            Nullam vulputate neque tellus, vitae rhoncus sapien ultricies ac. Nullam finibus mi eu
+                            laoreet
+                            dictum. Integer interdum, ante at luctus maximus, magna elit ullamcorper tellus, suscipit
+                            cursus
+                            mi velit in nulla.</p>
+
+                        <h3>Lorem Ipsum</h3>
+                        <p>Ut arcu nulla, maximus nec tortor sit amet, vulputate euismod arcu. Mauris maximus eget nisl
+                            nec
+                            tincidunt. Praesent sed sapien dictum, maximus ante varius, hendrerit est. Ut tortor dui,
+                            porta
+                            in semper sit amet, aliquam ut leo. Vestibulum ante ipsum primis in faucibus orci luctus et
+                            ultrices posuere cubilia curae; Cras lectus neque, vehicula nec lacinia vel, bibendum ac
+                            ante.
+                            In ultricies mi justo, vitae ultricies tellus lacinia ac. Donec tincidunt tempor convallis.
+                        </p>
+                        <p>Praesent ut ullamcorper eros. Praesent vitae quam in justo faucibus gravida ut quis massa.
+                            Suspendisse viverra lorem ac tempus sagittis. Vivamus fringilla purus ac justo tristique
+                            lacinia. Sed a tincidunt magna. Vestibulum feugiat nisl ac risus imperdiet hendrerit. Sed
+                            laoreet, est at imperdiet porta, dui turpis porta mauris, et condimentum orci ante eget
+                            justo.
+                            Curabitur risus ex, efficitur et sagittis in, malesuada ut nisi. Proin vel tellus vitae mi
+                            interdum interdum.</p>
+
+                        <h3>Dolor sit amet</h3>
+                        <p>Vestibulum sagittis dui ac augue sollicitudin, volutpat mollis ligula posuere. Vestibulum
+                            varius
+                            purus quis nibh euismod mattis. Phasellus ante ligula, consequat in purus vitae, vestibulum
+                            bibendum ante. Nunc dignissim nulla non porttitor hendrerit. Vivamus rutrum fermentum est.
+                            Vestibulum sit amet vestibulum enim, pellentesque suscipit urna. Proin et arcu libero.
+                            Phasellus
+                            cursus viverra fermentum. Nullam accumsan condimentum velit, eu auctor massa vestibulum sit
+                            amet. Nulla vulputate eleifend dolor et dignissim.</p>
+                    </section>
+                    <footer>
+                        <div class="blog-tag">Web Development</div>
+                        <div class="blog-tag">CSS</div>
+                        <div class="blog-tag">Automation</div>
+                    </footer>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <nav id="social-buttons">
+                <ul>
+                    <li>
+                        <a id="social-facebook" class="social-button" href="https://facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Facebook profile">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="social-instagram" class="social-button" href="https://facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Instagram profile">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="social-linkedin" class="social-button" href="https://facebook.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <svg>
+                                <use href="assets/vector/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p>Copyright &copy;2025</p>
+            </nav>
+            <p>Copyright &copy;2025</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
