@@ -106,6 +106,44 @@ header #menu-items a:hover {
     fill: var(--black-100);
     padding: 6px;
 }
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        z-index: 10;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+    }
+    header h1 {
+        font-size: 41px;
+    }
+    #nav-menu {
+        display: block;
+    }
+    #menu-items {
+        display: none;
+    }
+    .menu-open header {
+        padding: 1rem;
+        background-color: var(--background-secondary);
+    }
+    .menu-open .top-section {
+        margin-top: 250px;
+    }
+    .menu-open #menu-items {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--background-secondary);
+        flex-direction: column;
+        padding: 1rem;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        overflow: hidden;
+        border-bottom-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+    }
+}
 /* ============================= HEADER END ============================ */
 
 /* ============================= FOOTER ================================ */
