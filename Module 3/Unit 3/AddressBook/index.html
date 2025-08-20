@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Address Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-light">Address Book</h1>
+
+        <div class="rounded-container">
+            <h3 id="nothing-here">There's nothing here! Add an address to get started.</h2>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+        </div>
+
+
+        <h1 class="text-light" style="margin-top: 20px;">Add Entry</h1>
+
+        <div class="rounded-container">
+            <form name="entryForm" id="entryForm">
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                    <div id="name-error" class="form-text text-danger d-none">Please enter a valid first name.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputSurname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="inputSurname">
+                    <div id="surname-error" class="form-text text-danger d-none">Please enter a valid surname.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                    <div id="email-error" class="form-text text-danger d-none">Please enter a valid email.</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
